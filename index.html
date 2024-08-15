@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-comatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Akilportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e96c8fd8c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="home1">
+        <div id="header">
+            <div class="container">
+                <div class="nav-bar " id="line1">
+                    <h2 class="Akilan">AKILAN</h2>
+                    <nav>
+                        <a href="#home1" class="active">Home</a>
+                        <a href="#About1">About</a>
+                        <a href="#Services1">Services</a>
+                        <a href="#Portfilio1">Portfilio</a>
+                        <a href="#Contact1">Contact</a>
+                    </nav>
+                </div>
+
+                <script src="script.js"></script>
+                <div class="header-text">
+                    <p> UI designer</p>
+                    <h1>Hi,Iam<span> Akilan</span> from Ariyalur</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="About1">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="aboutme.jpg" alt="">
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="sub-tytle">About Me</h1>
+                        <p>I am <span>AKILAN</span> from <span>SRM TRP</span> a passionate web developer with a focus on
+                            creating intuitive and responsive applications. With a background in [mention your relevant
+                            education or experience], I thrive in collaborative.</p>
+                        <div class="tab-tytle">
+                            <p class="tab-links active-link" onclick="opentab('skill')">skill</p>
+                            <p class="tab-links" onclick="opentab('experience')">experience</p>
+                            <p class="tab-links" onclick="opentab('education')">education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skill">
+                            <ul>
+                                <li><span>UI?UX</span><br>designing WEB interfaces</li>
+                                <li><span>App developer</span><br>APP WEB interfaces</li>
+                                <li><span>Web developer</span><br>Building WEB interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024-current</span><br>SRM TRP Student</li>
+                                <li><span>2022-diploma</span><br>TVS polytechnic college</li>
+                                <li><span>2018-school</span><br>Montfort school</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>BE Computer science and engineering</li>
+                                <li><span>2022</span><br>Diplomo</li>
+                                <li><span>2018</span><br>School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="Services1">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-tytle">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Wb design</h3>
+                        <p>A Web Designer, or Web Applications Designer, is responsible for designing the overall layout
+                            and aesthetic for websites. Their duties include coding webpages or entire</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h3>UI design</h3>
+                        <p>A Web Designer, or Web Applications Designer, is responsible for designing the overall layout
+                            and aesthetic for websites. Their duties include coding webpages or entire</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h3>APP design</h3>
+                        <p>A Web Designer, or Web Applications Designer, is responsible for designing the overall layout
+                            and aesthetic for websites. Their duties include coding webpages or entire</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> INNOVIX</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="group1.jpeg" alt="">
+                    <div class="layer">
+                        <h5>TNStartup</h5>
+                        <p>INNOVIX startup meet has been conduct by tnstartup</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="group2.jpeg" alt="">
+                    <div class="layer">
+                        <h5>NTI</h5>
+                        <p>NIT meet for pitching our projects and for more refrence</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="group3.jpeg" alt="">
+                    <div class="layer">
+                        <h5>PROJEC DAY</h5>
+                        <p>INNOVIX projects has been displayed in projectday of SRM</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        let sections = document.querySelectorAll('section');
+        let navlinks = document.querySelectorAll('header nav a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop;
+                let height = set.offfsetheight;
+                let id = sec.getAttribute
+
+                    ('id');
+
+                if (top >= offset && top < offset + height) {
+                    navlinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('header nav a [href*=' + + ']');
+                        ('active');
+                    }
+                    )
+                }
+
+            })
+        }
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var line1 = document.getElementById("line1");
+        var sticky = header.offsetTop;
+
+        /* Function to stick the nav bar */
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                line1.classList.add("sticky")
+            }
+            else {
+                line1.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

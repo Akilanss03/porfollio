@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(153, 150, 150);
+    color: #0f0e0e;
+    background: linear-gradient(317deg, #2dc8a0, #c4d05d, #d69521, #21bed6);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 34s ease infinite;
+    -moz-animation: AnimationName 34s ease infinite;
+    animation: AnimationName 34s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+  
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(akil03.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-image: fill 0 linear-gradient(#0003,#545353);
+}
+.container{
+    padding: 10px 10%;
+}
+h2{
+        color: transparent;
+        border-radius: 10px;
+        background-image: url(th\ \(5\).jpeg);
+        background-size: contain;
+        box-shadow: 0px 2px 10px rgba(0,0,0,.07);
+        background-clip: text;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 150px;
+}
+nav{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 35px;
+    transition: background 0.5s,transform 0.5s;
+}
+nav a:hover{
+   color: aquamarine;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin: 20px;
+}
+.header-text h1 span{
+    color: aqua
+    ;
+}
+#about{
+    padding: 80px 0;
+    color: #161515;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col2{
+    flex-basis: 60%;
+}
+.sub-tytle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.about-col2 p span{
+    color: #ff004f;
+}
+.tab-tytle{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: aquamarine;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    transition: background 0.5s,transform 0.5s;
+}
+#Services1{
+    padding: 10px 10%;
+    background-color: rgba(204, 211, 213, 0.2);
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0px;
+
+    padding: 10px 10%;
+    
+
+}
+.services-list div{
+    background: #a19898;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+.services-list div i{
+    font-size: 50px;
+    margin: 30px; 
+    position: relative;
+    right: 47px;
+}
+.services-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #9accb3;
+    transform: translateY(-10px);
+}
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+
+}
+.layer h5{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
